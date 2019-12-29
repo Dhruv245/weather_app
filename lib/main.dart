@@ -115,7 +115,7 @@ class MyAppState extends State<MyApp> {
     if (location != null) {
       final lat = location['latitude'];
       final lon = location['longitude'];
-                   
+                                                                  
       final weatherResponse = await http.get(
           'https://api.openweathermap.org/data/2.5/weather?APPID=ad1adcf297094609a1c6b940a45f18c2&lat=${lat
               .toString()}&lon=${lon.toString()}');
